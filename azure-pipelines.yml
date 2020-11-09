@@ -27,6 +27,7 @@ stages:
     displayName: Publish
     pool:
       vmImage: $(vmImageName)
+    environment: 'npmjs'
     strategy:
       runOnce:
         deploy:
